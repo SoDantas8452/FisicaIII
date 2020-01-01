@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Sócrates de O. Dantas'
-SITENAME = 'Tópicos relacionados a Física III - UFJF'
+SITENAME = 'Tópicos relacionados a Física III (DF - ICE - UFJF)'
 SITEURL = ''
 
 PATH = 'content'
@@ -11,6 +11,18 @@ PATH = 'content'
 TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = 'en'
+
+PLUGIN_PATHS = ['pelican-plugins']
+
+THEME = 'pelican-themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'flatly'
+
+PLUGIN_PATHS = ['pelican-plugins']
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+PLUGINS = [
+    'i18n_subsites']
+
+I18N_TEMPLATES_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
